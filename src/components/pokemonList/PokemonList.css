@@ -1,0 +1,71 @@
+.pokemon-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1rem; /* Add some padding for better spacing */
+}
+
+.pokemon-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Page control buttons */
+.page-controler {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    margin-top: 1rem; /* Add some space above the buttons */
+}
+
+.page-controler button {
+    padding: 10px 2rem;
+    margin-left: 1rem;
+    font-weight: bolder;
+    border: none;
+    background-color: salmon;
+    border-radius: 5px;
+    cursor: pointer; /* Change cursor to pointer for better UX */
+}
+
+/* Button hover effect */
+.page-controler button:hover {
+    background-color: tomato;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .pokemon-list {
+        flex-direction: column;
+        justify-content: center; /* Center items on smaller screens */
+        padding: 0.5rem; /* Reduce padding */
+
+    }
+
+    .page-controler {
+        flex-direction: row; /* Stack buttons vertically */
+        align-items: center; /* Center buttons */
+        margin-top: 0.5rem; /* Reduce margin above buttons */
+        gap: 2rem;
+    }
+
+    .page-controler button {
+        width: 100%; /* Make buttons full width on small screens */
+        margin-left: 0; /* Remove left margin for full-width buttons */
+        margin-bottom: 0.5rem; /* Add space between stacked buttons */
+        padding: 10px 25px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .pokemon-list {
+        flex-direction: column; /* Stack items vertically on very small screens */
+        align-items: center; /* Center items */
+        
+    }
+
+    .pokemon-list-wrapper {
+        width: 100%; /* Make wrapper full width */
+        padding: 0.5rem; /* Add some padding around items */
+    }
+}

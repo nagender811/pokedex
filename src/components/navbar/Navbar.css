@@ -1,0 +1,19 @@
+.pokemon-redirect {
+    display: flex;
+    flex-direction: row;
+    width: 10px;
+    gap: 1rem;
+    align-items: center;
+    /* margin-left: 1rem; */
+  }
+  .pokemon-redirect:hover {
+    color:#551A8B;
+  }
+  .pokemon-redirect:hover img {
+    rotate: 360deg;
+    transition: all 1s ease-in-out;
+  }
+  .pokemon-redirect img {
+    width: 40px;
+    height: 40px;
+  }
